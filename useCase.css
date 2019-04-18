@@ -1,0 +1,47 @@
+body{
+    background: #888;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    width:600px;
+    text-align: center;
+}
+
+
+.container .pHolder{
+    position: relative;
+    animation: slider;
+    animation-duration: 1s;
+}
+
+@keyframes slider{
+    0%{
+        opacity: 0;
+        right: -100px;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.btn{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border: solid 1px white;
+    top:10px;
+    transition: background, color, border;
+    transition-duration: .5s, .2s, .2s;
+    transition-timing-function: linear;
+}
+
+.btn:hover{
+    border: solid 1px #888;
+    color: #888;
+    background: white;
+    
+}
